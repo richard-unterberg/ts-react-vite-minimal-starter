@@ -1,34 +1,27 @@
-import {
-  ExternalLink,
-  Github,
-  MagnetIcon,
-  MonitorDown,
-  PackageCheck,
-  PencilRuler,
-  Sailboat,
-} from 'lucide-react'
 import tw from 'tailwind-styled-components'
 
+import Icon from '@/components/common/Icon'
+import { ICON_ID } from '@/lib/icons/iconID'
 import useAppTheme from '@/lib/useTheme'
 
 const BoxElement = tw.div`
   p-3.5
   m-0
-  bg-darkLight
   border
   rounded
-  text-grayLight
-  border-darkLightBorder
   items-center
   text-small
   gap-2
+  text-grayLight
+  bg-darkLight
+  border-darkLightBorder
 `
 
 const CodeElement = tw.code`
   font-mono
-  text-warning
   p-1
   inline-block
+  text-warning
   bg-dark
 `
 
@@ -68,7 +61,11 @@ const LinkElement = ({ children, href }: { children: React.ReactNode; href: stri
       rel="noreferrer"
     >
       {children}
-      <ExternalLink className="inline-block align-super mr-1" size={spacing(2.5)} />
+      <Icon
+        icon={ICON_ID.ExternalLink}
+        className="inline-block align-super mr-1"
+        size={spacing(2.5)}
+      />
     </a>
   )
 }
@@ -83,12 +80,17 @@ const Start = () => {
           aria-label="to-github"
           href="https://github.com/richard-unterberg/ts-react-vite-minimal-starter"
         >
-          <Github size={spacing(10)} />
+          <Icon icon={ICON_ID.Github} size={spacing(10)} />
         </a>
       </Popover>
 
       <div className="xs:block md:flex gap-3 mt-16 my-10 items-center">
-        <MagnetIcon className="mx-auto mb-4 md:mx-0 " color={color('warning')} size={spacing(24)} />
+        <Icon
+          icon={ICON_ID.MagnetIcon}
+          color={color('warning')}
+          className="mx-auto mb-4 md:mx-0 "
+          size={spacing(24)}
+        />
         <div className="text-center md:text-left">
           <p className="mb-5 font-mono">ts-react-vite-minimal-starter</p>
           <h1 className="text-3xl font-bold" id="typescript--react--vite">
@@ -175,7 +177,8 @@ const Start = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <BoxElement>
           <BoxHeadline>
-            Installation <MonitorDown color={color('grayDark')} />
+            Installation
+            <Icon icon={ICON_ID.MonitorDown} color={color('grayDark')} />
           </BoxHeadline>
           <p>
             clone repo and: <br />
@@ -184,7 +187,7 @@ const Start = () => {
         </BoxElement>
         <BoxElement>
           <BoxHeadline>
-            Local Dev <PencilRuler color={color('grayDark')} />
+            Local Dev <Icon icon={ICON_ID.PencilRuler} color={color('grayDark')} />
           </BoxHeadline>
           <p>
             Start local dev server with <br />
@@ -193,7 +196,7 @@ const Start = () => {
         </BoxElement>
         <BoxElement>
           <BoxHeadline>
-            Build <Sailboat color={color('grayDark')} />
+            Build <Icon icon={ICON_ID.Sailboat} color={color('grayDark')} />
           </BoxHeadline>
           <p>
             build production ready copy to <span className="font-mono">dist</span> folder:
@@ -203,7 +206,7 @@ const Start = () => {
         </BoxElement>
         <BoxElement>
           <BoxHeadline>
-            Preview <PackageCheck color={color('grayDark')} />
+            Preview <Icon icon={ICON_ID.Sailboat} color={color('grayDark')} />
           </BoxHeadline>
           <p>
             Preview the build from <span className="font-mono">dist</span> folder: <br />
@@ -214,7 +217,7 @@ const Start = () => {
       <div className="mb-20 mt-20 text-small text-center">
         <div className="w-1/2 mb-10 border-grayDark h-1 border-dotted border-b-2 mx-auto" />
         <LinkElement href="https://github.com/richard-unterberg/ts-react-vite-minimal-starter">
-          https://github.com/richard-unterberg/ts-react-vite-minimal-starter
+          ⭐️ https://github.com/richard-unterberg/ts-react-vite-minimal-starter
         </LinkElement>
       </div>
     </div>
