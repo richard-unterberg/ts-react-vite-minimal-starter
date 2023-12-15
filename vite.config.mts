@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
-  base: '/', // for gh pages use schema '/{page-name}/'
+  base: '/ts-react-vite-minimal-starter/', // remove for using root
   plugins: [react(), tsconfigPaths()],
   resolve: {
     alias: {
