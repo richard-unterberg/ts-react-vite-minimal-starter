@@ -81,7 +81,7 @@ const Start = () => {
       <Popover>
         <a
           aria-label="to-github"
-          href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig"
+          href="https://github.com/richard-unterberg/ts-react-vite-minimal-starter"
         >
           <Github size={spacing(10)} />
         </a>
