@@ -8,7 +8,7 @@ interface LazyIconIconProps extends LucideProps {
   icon: ICON_ID
 }
 
-const LazyIcon = ({ icon, ...props }: LazyIconIconProps) => {
+const IconLazyRenderer = ({ icon, ...props }: LazyIconIconProps) => {
   const AppIconComponent = useMemo(() => APP_ICON[icon].component ?? null, [icon])
 
   if (AppIconComponent) {
@@ -17,4 +17,4 @@ const LazyIcon = ({ icon, ...props }: LazyIconIconProps) => {
   return null
 }
 
-export default LazyIcon
+export default IconLazyRenderer
