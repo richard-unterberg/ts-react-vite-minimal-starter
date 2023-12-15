@@ -52,7 +52,6 @@ const Popover = tw.div`
 
 const LinkElement = ({ children, href }: { children: React.ReactNode; href: string }) => {
   const { spacing } = useAppTheme()
-
   return (
     <a
       className="text-primary items-center inline-flex gap-0.5"
@@ -72,7 +71,6 @@ const LinkElement = ({ children, href }: { children: React.ReactNode; href: stri
 
 const Start = () => {
   const { color, spacing } = useAppTheme()
-
   return (
     <div className="relative container px-5 mx-auto text-white text-base max-w-4xl">
       <Popover>
@@ -93,11 +91,11 @@ const Start = () => {
         />
         <div className="text-center md:text-left">
           <p className="mb-5 font-mono">ts-react-vite-minimal-starter</p>
-          <h1 className="text-3xl font-bold" id="typescript--react--vite">
+          <h1 className="text-3xl mb-2 font-bold" id="typescript--react--vite">
             TypeScript + React + Vite
           </h1>
-          <h2 className="font-bold mb-6" id="feat-tailwind-css--eslint--prettier">
-            feat. Tailwind CSS + ESLint + Prettier)
+          <h2 className="font-normal mb-6" id="feat-tailwind-css--eslint--prettier">
+            Tailwind CSS + ESLint + Prettier
           </h2>
         </div>
       </div>
@@ -206,7 +204,7 @@ const Start = () => {
         </BoxElement>
         <BoxElement>
           <BoxHeadline>
-            Preview <Icon icon={ICON_ID.Sailboat} color={color('grayDark')} />
+            Preview <Icon icon={ICON_ID.PackageCheck} color={color('grayDark')} />
           </BoxHeadline>
           <p>
             Preview the build from <span className="font-mono">dist</span> folder: <br />
