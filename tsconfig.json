@@ -14,15 +14,15 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
+    /* Lint */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
     "allowJs": true,
     "declaration": false,
 
+    /* Path & Alias */
     "baseUrl": ".",
     "paths": {
       "@/types/*": ["./src/lib/types/*"],
@@ -32,7 +32,7 @@
       "@/root/*": ["./*"],
     },
   },
-  "include": ["vite-env.d.ts", "**/*.ts", "**/*.tsx", "vite.config.ts"],
+  "include": ["**/*.ts", "**/*.tsx","**/*.mts", "vite.config.mts"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,27 +1,47 @@
-# React + TypeScript + Vite
+# TypeScript + React + Vite
+## feat. Tailwind CSS + ESLint + Prettier)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Featuresome template to provides a additional setup to get TS-React working in Vite with HMR and handful of strict ESLint rules, I want to add to work with properly in my side projects.
 
-Currently, two official plugins are available:
+Features:
+- Tailwind CSS integration
+- Fontsource integration
+- Custom Theme Hook
+- Lucide Icon Library
+- Full Dev Setup
+  - ESLint
+  - Prettier + Prettier Sort Imports
+  - Husky + lint-staged
+  - editorconfig
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage
 
-## Expanding the ESLint configuration
+### Install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- clone
+- run `npm install` in root
 
-- Configure the top-level `parserOptions` property like this:
+### Development
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Start local dev server:
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Build
+
+build production ready copy to `dist` folder:
+```bash
+npm run build
+```
+
+### Preview Build
+
+to preview production-build locally:
+```bash
+# build before preview
+npm run build
+
+# the run preview
+npm run preview
+```

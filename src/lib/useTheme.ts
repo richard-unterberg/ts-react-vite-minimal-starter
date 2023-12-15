@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react'
-import twConfig from 'tailwind.config'
+import twConfig from 'tailwind.config.js'
 import { spacing as twSpacing } from 'tailwindcss/defaultTheme'
 
 const { theme: twTheme } = twConfig

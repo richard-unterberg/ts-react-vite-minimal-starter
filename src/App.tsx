@@ -1,6 +1,5 @@
-import '@fontsource/inter/400.css'
-import '@fontsource/inter/700.css'
-import '@fontsource/inter/900.css'
+import '@fontsource/inter/latin-400.css'
+import '@fontsource/inter/latin-700.css'
 
 import Start from '@/components/Start'
 

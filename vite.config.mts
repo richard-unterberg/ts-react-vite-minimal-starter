@@ -8,10 +8,15 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   resolve: {
     alias: {
-      'tailwind.config': path.resolve(__dirname, 'tailwind.config.js'),
+      'tailwind.config.js': path.join(__dirname, 'tailwind.config.js'),
     },
   },
   optimizeDeps: {
-    include: ['tailwind.config'],
+    include: ['tailwind.config.js'],
+  },
+  build: {
+    commonjsOptions: {
+      include: ['tailwind.config.js', 'node_modules/**'],
+    },
   },
 })

@@ -36,11 +36,10 @@ module.exports = {
     },
   },
   plugins: [
-    function ({ addBase, theme }) {
-      function extractColorVars(colorObj, colorGroup = '') {
-        return Object.keys(colorObj).reduce((vars, colorKey) => {
+    ({ addBase, theme }) => {
+      const extractColorVars = (colorObj, colorGroup = '') =>
+        Object.keys(colorObj).reduce((vars, colorKey) => {
           const value = colorObj[colorKey]
-
           const newVars =
             typeof value === 'string'
               ? { [`--tw${colorGroup}-${colorKey}`]: value }
@@ -48,7 +47,7 @@ module.exports = {
 
           return { ...vars, ...newVars }
         }, {})
-      }
+
       addBase({
         ':root': extractColorVars(theme('colors')),
       })
