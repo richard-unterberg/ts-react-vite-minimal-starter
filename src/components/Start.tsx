@@ -77,17 +77,17 @@ const Start = () => (
       <div className="text-center md:text-left">
         <p className="mb-5 font-mono">ts-react-vite-minimal-starter</p>
         <h1 className="text-3xl mb-2 font-bold" id="typescript--react--vite">
-          TypeScript + React + Vite
+          ts-react + vite = 😍
         </h1>
         <h2 className="font-normal mb-6" id="feat-tailwind-css--eslint--prettier">
-          Tailwind CSS + ESLint + Prettier
+          Uno CSS + ESLint + Prettier
         </h2>
       </div>
     </div>
 
     <p className="mb-10">
-      Featuresome template to provide an additional setup to get TS-React working in Vite with HMR
-      and handful of strict ESLint rules. I want to add to work with properly in my side projects.
+      Another jumpstarter with some additional setup to get ts-react working in Vite with HMR and
+      thrown a handful strict ESLint rules at it. Ready, set, go! 🏎️
     </p>
 
     <p className="font-bold mb-4">Preconditions:</p>
@@ -120,7 +120,7 @@ const Start = () => (
         <LinkElement href="https://github.com/vitejs/vite">Vite</LinkElement>
       </BoxElement>
       <BoxElement>
-        🎨 <LinkElement href="https://github.com/unocss/unocsss">Uno CSS</LinkElement>
+        🎨 <LinkElement href="https://github.com/unocss/unocss">Uno CSS</LinkElement>
       </BoxElement>
       <BoxElement>
         ✍️ <LinkElement href="https://github.com/fontsource/fontsource">@fontsource</LinkElement>
