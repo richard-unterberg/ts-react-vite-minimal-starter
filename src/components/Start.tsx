@@ -120,13 +120,11 @@ const Start = () => (
         <LinkElement href="https://github.com/vitejs/vite">Vite</LinkElement>
       </BoxElement>
       <BoxElement>
-        🎨{' '}
-        <LinkElement href="https://github.com/tailwindlabs/tailwindcss">Tailwind CSS</LinkElement>
+        🎨 <LinkElement href="https://github.com/unocss/unocsss">Uno CSS</LinkElement>
       </BoxElement>
       <BoxElement>
         ✍️ <LinkElement href="https://github.com/fontsource/fontsource">@fontsource</LinkElement>
       </BoxElement>
-      <BoxElement>🎛️ Custom Theme Hook</BoxElement>
       <BoxElement>
         💫 <LinkElement href="https://github.com/lucide-icons/lucide">lucide-react</LinkElement>{' '}
         icons
@@ -136,7 +134,7 @@ const Start = () => (
       </BoxElement>
       <BoxElement>
         💄 <LinkElement href="https://github.com/prettier/prettier">Prettier</LinkElement> +{' '}
-        <LinkElement href="https://github.com/trivago/prettier-plugin-sort-imports">
+        <LinkElement href="https://github.com/IanVS/prettier-plugin-sort-imports">
           Prettier Sort Imports
         </LinkElement>
       </BoxElement>
