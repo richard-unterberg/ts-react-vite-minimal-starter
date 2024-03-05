@@ -1,9 +1,9 @@
 import { LucideProps } from 'lucide-react'
-import { Suspense, lazy } from 'react'
+import { lazy, Suspense } from 'react'
 
-import { ICON_ID } from '@/lib/icons/iconID'
+import { ICON_ID } from '#lib/icons/iconID'
 
-const IconLazyRenderer = lazy(() => import('@/lib/icons/IconLazyRenderer'))
+const IconLazyRenderer = lazy(() => import('#lib/icons/IconLazyRenderer'))
 
 interface AppIconProps extends LucideProps {
   icon: ICON_ID

@@ -2,6 +2,7 @@
   "name": "ts-react-vite-minimal-starter",
   "license": "MIT",
   "author": "Richard Unterberg <https://github.com/richard-unterberg>",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/richard-unterberg/ts-react-vite-minimal-starter"
@@ -15,13 +16,19 @@
     "prepare": "husky install",
     "pre-commit": "lint-staged",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src/",
-    "format:lint": "yarn format && yarn lint",
     "check:lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
     "check:prettier": "prettier --check \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
-    "check": "yarn check:lint && yarn check:prettier",
     "dev": "vite",
+    "prod": "vite build && vite preview",
     "build": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "bash -c tsc --noEmit"
+    ]
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.16",
@@ -34,13 +41,12 @@
     "styled-components": "^6.1.1",
     "tailwind-styled-components": "^2.2.0",
     "tailwindcss": "3.3.6",
-    "vite": "^5.0.10"
+    "vite": "^5.1.5"
   },
   "devDependencies": {
-    "vite-tsconfig-paths": "^4.2.2",
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.45",
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
@@ -59,6 +65,7 @@
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "unocss": "^0.58.5"
   }
 }

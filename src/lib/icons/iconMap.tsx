@@ -14,7 +14,7 @@ import {
   Sailboat,
 } from 'lucide-react'
 
-import { ICON_ID } from '@/lib/icons/iconID'
+import { ICON_ID } from '#lib/icons/iconID'
 
 type ICON_TYPE = {
   [key in ICON_ID]: {
